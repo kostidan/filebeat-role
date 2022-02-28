@@ -1,0 +1,5 @@
+output.elasticsearch:
+    hosts: {{ elasticsearch_url }}
+setup.kibana:
+    host: {{ kibana_url }}
+filebeat.config.modules.path: ${path.config}/modules.d/*.yml
